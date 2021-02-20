@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.img-movie{
+  width:100px;
+  height: 100px;
+}
+
+.btn-Component{
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  color: aliceblue;
+  background-color: brown;
+  padding: 10px;
+  margin: 10px;
+  border:none;
+  border-radius: 10px;
+}
+
+.btn-Component:hover{
+  background-color: #b53a00;
+  transition-duration: 0.7s ;
+  
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(7px + 1vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.label{
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+  display: inline;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+li{
+  list-style-type: none; 
+}
+
+.movies-list{
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+} 
+
+.movies-list img{
+  width: 100%;
+  box-shadow: 1px 1px 5px #fff;
+}
+
+.backdrop{
+  width: 100%;
+  position:absolute;
+  top:0;
+  left: 0;
+}
+
+.detail-details{
+  background: white;
+  position: relative;
+  z-index: 10; 
+  color:#333;
+  margin-top: 400px;
+  display: flex;
+  text-align: left;
+  gap: 30px;
+  padding: 20px;
+
+} 
+
+.poster{
+  position: relative;
+  margin-top:-100px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
